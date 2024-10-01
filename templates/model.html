@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep learning models</title>
+</head>
+
+<body>
+    {% include 'navbar.html' %}
+
+    <div class="container p-4 mt-5">
+        <div class="container bg-primary-subtle p-3 rounded">
+            <h1 class="text-center"> Model: DenseNet</h1>
+            <hr>
+            <p class="fs-5">
+                DenseNet, short for Densely Connected Convolutional Network, is a deep learning architecture that has
+                gained significant attention for its efficiency and performance. Unlike traditional convolutional neural
+                networks (CNNs), where each layer's output is connected only to the next layer, DenseNet connects every
+                layer to every other layer after it. This dense connectivity pattern promotes feature reuse and helps to
+                alleviate the vanishing gradient problem, a common issue in deep networks.
+                <br>
+                In DenseNet, each layer receives the feature maps from all preceding layers as inputs, and its
+                output is concatenated with the feature maps of all subsequent layers. This dense connectivity pattern
+                encourages feature reuse, as information from earlier layers can be directly accessed by later layers,
+                leading to more efficient learning. Additionally, the dense connections help to reduce the number of
+                parameters in the network, making it more computationally efficient.
+            </p>
+        </div>
+        <div class="container bg-primary-subtle p-3 mt-4 rounded">
+            <h1 class="text-center"> Model: InceptionV3</h1>
+            <hr>
+            <p class="fs-5">
+                InceptionV3 is a deep convolutional neural network (CNN) architecture that has achieved state-of-the-art
+                performance on various image classification tasks. The Inception module, which is the core building
+                block of InceptionV3, is designed to efficiently extract features at different scales. This is achieved
+                by using multiple convolutional filters with different sizes, followed by a pooling layer. The idea
+                behind the Inception module is to capture features at different levels of abstraction, improving the
+                network's ability to recognize complex patterns in images.
+                <br>
+                InceptionV3 incorporates several enhancements over earlier versions of the Inception architecture,
+                including the use of auxiliary classifiers and factorization of convolutions. These improvements help to
+                regularize the network and prevent overfitting, leading to better generalization performance.
+            </p>
+        </div>
+        <div class="container bg-primary-subtle p-3 mt-4 rounded">
+            <h1 class="text-center"> Model: EfficientNet</h1>
+            <hr>
+            <p class="fs-5">
+                The MBConv layer is a fundamental building block of the EfficientNet architecture. It is inspired by the
+                inverted residual blocks from MobileNetV2 but with some modifications. The MBConv layer starts with a
+                depth-wise convolution, followed by a point-wise convolution (1x1 convolution) that expands the number
+                of channels, and finally, another 1x1 convolution that reduces the channels back to the original number.
+                This bottleneck design allows the model to learn efficiently while maintaining a high degree of
+                representational power. In addition to MBConv layers, EfficientNet incorporates the SE block, which
+                helps the model learn to focus on essential features and suppress less relevant ones. The SE block uses
+                global average pooling to reduce the spatial dimensions of the feature map to a single channel, followed
+                by two fully connected layers. These layers allow the model to learn channel-wise feature dependencies
+                and create attention weights that are multiplied with the original feature map, emphasizing important
+                information.
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

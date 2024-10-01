@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardamom-leaf Desease Detector</title>
+</head>
+
+<body>
+    {% include 'navbar.html '%}
+
+    <div class="d-flex justify-content-center">
+        <img src="../static/images/bg/bg.webp" alt="" class="img-fluid">
+    </div>
+
+    <div class="container mt-4 shadow p-4 bg-primary-subtle rounded" style="min-width: 360px; width: 60%;">
+        <h3 class="fw-semibold">Healthy Cardamom Leaves, Healthy Yields: Your Digital Disease Detective</h3>
+        <hr>
+        <p class="fs-5">
+            Welcome to Cardamom Leaf Disease Detector, a cutting-edge web application designed to revolutionize cardamom
+            cultivation. Our innovative platform leverages advanced image processing and machine learning algorithms to
+            accurately diagnose various diseases affecting cardamom leaves. By simply uploading an image of a cardamom
+            leaf, you can instantly receive a precise identification and recommendations for effective treatment.
+        </p>
+    </div>
+
+    <div class=" container p-3 shadow mt-5">
+        <h3 class="fw-semibold">Key Features</h3>
+        <hr>
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-5 bg-primary-subtle p-3 m-1">
+                <p class="fs-5">
+                    <b>Advanced Algorithms:</b>
+                    Our application employs state-of-the-art image processing and machine learning techniques to
+                    accurately diagnose a wide range of cardamom leaf diseases.
+                </p>
+            </div>
+            <div class="col-md-5 bg-primary-subtle p-3 m-1">
+                <p class="fs-5">
+                    <b>User-Friendly Interface:</b>
+                    Our platform is designed with simplicity in mind, making it easy for users of all levels to navigate
+                    and utilize.
+                </p>
+            </div>
+            <div class="col-md-5 bg-primary-subtle p-3 m-1">
+                <p class="fs-5">
+                    <b>High Accuracy:</b>
+                    Benefit from precise identification of diseases, ensuring timely and effective treatment.
+                </p>
+            </div>
+            <div class="col-md-5 bg-primary-subtle p-3 m-1">
+                <p class="fs-5">
+                    <b>On-the-Go Diagnosis:</b>
+                    Access our application from your smartphone or tablet for convenient disease detection and
+                    management anytime, anywhere.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3 p-4 shadow" style="width: 50%; min-width: 360px;">
+        <h3 class="fw-semibold text-center">How It Works </h3>
+        <hr>
+        <div class="bg-primary-subtle">
+            <div class="d-flex justify-content-center align-items-center gap-5 p-3">
+                <p class="fs-5">Upload cardamom leaf image</p>
+                <img src="../static/images/bg/uploadingIcon.png" alt="" height="50" width="50">
+            </div>
+            <div class="d-flex justify-content-center align-items-center gap-5 p-3">
+                <p class="fs-5">Get a results in Seconds</p>
+                <img src="../static/images/bg/loading.png" alt="" height="50" width="50">
+            </div>
+            <div class="d-flex justify-content-center align-items-center gap-5 p-3">
+                <p class="fs-5">Try it now</p>
+                {% if session.get('logged') %}
+                <a href="/output" class="btn btn-primary">Get Started</a>
+                {% else %}
+                <a href="/login" class="btn btn-primary">Get Started</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

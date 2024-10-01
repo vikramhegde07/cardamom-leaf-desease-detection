@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+</head>
+
+<body>
+
+    {% include 'navbar.html' %}
+
+    <div class="container bg-body mt-3 p-4">
+        <h1 class="text-center">About Us</h1>
+        <hr>
+
+        <div class="container bg-primary-subtle p-3" style="min-width: 360px; width: 80%;">
+            <h1>Our Mission</h1>
+            <hr>
+            <p class="fs-5">
+                Our mission is to empower cardamom growers with the tools they need to safeguard their crops and achieve
+                optimal yields. By providing an accurate and accessible disease detection platform, we aim to
+                revolutionize the cultivation of cardamom, ensuring healthy plants, sustainable practices, and a
+                thriving agricultural community.
+            </p>
+        </div>
+
+        <div class="container bg-primary-subtle mt-4 p-3" style="min-width: 360px; width: 80%;">
+            <h1>Our Team</h1>
+            <hr>
+            <p class="fs-5">
+                OOur dedicated team of agricultural experts, data scientists, and software developers is passionate
+                about harnessing technology to improve the lives of cardamom farmers. With a deep understanding of
+                cardamom cultivation and a commitment to innovation, we strive to create solutions that address the
+                challenges faced by growers and promote sustainable agricultural practices.
+            </p>
+            <ul>
+                <li>Dr.Example</li>
+                <p class="text-body-secondary">Profession details</p>
+                <li>Developer</li>
+                <p class="text-body-secondary">Profession details</p>
+            </ul>
+        </div>
+
+        <div class="container bg-primary-subtle mt-3 p-3" style="min-width: 360px; width: 80%;">
+            <h1>Our Technology</h1>
+            <hr>
+            <p class="fs-5">
+                Our disease detection model is powered by cutting-edge deep learning techniques, including DenseNet,
+                InceptionV3, and EfficientNetV2B0 architectures. These advanced models have been meticulously trained on
+                a vast dataset of cardamom leaf images, enabling them to accurately identify and classify various
+                diseases with exceptional precision. </p>
+            <a href="/model" class="btn fs-5 text-decoration-underline" style="width: fit-content;">
+                For more information on our deep learning technology
+                <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Training Result</title>
+</head>
+
+<body>
+    {% include 'navbar.html' %}
+    <div class="container p-4 mt-5">
+        <h1 class="text-center">Result of Deep Learning models</h1>
+    </div>
+    <div class="container bg-primary-subtle shadow p-4 mt-3">
+        <h2 class="text-center fw-semibold">EfficientNet</h2>
+        <hr>
+        <p class="fs-5"><b>Training Accuracy :</b> 98.49% </p>
+        <p class="fs-5"><b>Test Accuracy :</b> 100%</p>
+        <hr>
+        <div class="container d-flex align-items-center justify-content-center">
+            <img src="../static/Models/output.png" alt="" class="img-fluid">
+        </div>
+    </div>
+    <div class="container bg-primary-subtle shadow p-4 mt-5">
+        <h2 class="text-center fw-semibold">DenseNet</h2>
+        <hr>
+        <p class="fs-5"><b>Training Accuracy :</b> 89.09% </p>
+        <p class="fs-5"><b>Test Accuracy :</b> 97.77%</p>
+        <hr>
+        <div class="container d-flex align-items-center justify-content-center">
+            <img src="../static/Models/output_densenet.png" alt="" class="img-fluid">
+        </div>
+    </div>
+    <div class="container bg-primary-subtle shadow p-4 mt-5">
+        <h2 class="text-center fw-semibold">InceptionV3</h2>
+        <hr>
+        <p class="fs-5"><b>Training Accuracy :</b> 81.82 </p>
+        <p class="fs-5"><b>Test Accuracy :</b> 76.81%</p>
+        <hr>
+        <div class="container d-flex align-items-center justify-content-center">
+            <img src="../static/Models/output_inceptionV3.png" alt="" class="img-fluid">
+        </div>
+    </div>
+</body>
+
+</html>
