@@ -1,10 +1,14 @@
- ---------------------------Information----------------------
+The model file is large so it is uploaded to the gdrive
+Model  files will be made public shortly
+
+# Information
 
 # Default Login Credentials
 username - 'admin'
 password - 'admin'
 
-# Python 3.12 basic virtual environment is in 'env' folder
+# Create a python3.12 virtual environment by executing command - 
+python -m venv env
 
 # Activate the environment by executing command
 env\Scripts\activate
